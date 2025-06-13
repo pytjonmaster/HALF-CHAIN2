@@ -12,8 +12,8 @@ const steps = [
   },
   {
     icon: <Cpu className="h-10 w-10 text-white" />,
-    title: 'AI Generation',
-    description: 'Our AI analyzes your requirements and generates a secure, compliant smart contract.'
+    title: 'Template Generation',
+    description: 'Our system analyzes your requirements and generates a secure, compliant smart contract using templates.'
   },
   {
     icon: <CheckCircle className="h-10 w-10 text-white" />,

@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const features = [
   {
     icon: <Brain className="h-10 w-10 text-yellow-500" />,
-    title: 'AI-Powered Automation',
-    description: 'Our AI analyzes and generates smart contracts based on your specific requirements, saving time and reducing errors.'
+    title: 'Template-Based Generation',
+    description: 'Generate smart contracts using secure, pre-built templates based on your specific requirements, saving time and reducing errors.'
   },
   {
     icon: <Shield className="h-10 w-10 text-yellow-500" />,

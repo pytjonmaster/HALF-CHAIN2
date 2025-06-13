@@ -1,12 +1,13 @@
-import { generateSmartContract } from '@/services/openaiService';
+// Template-based contract generation (AI removed)
+
 
 export const generateContractCode = async (formData) => {
   if (!formData?.contractName || !formData?.contractType) {
     throw new Error('Contract name and type are required');
   }
 
-  // Try AI generation - let errors bubble up instead of catching them here
-  const generatedCode = await generateSmartContract(formData);
+  // Generate contract using templates
+  const generatedCode = generateTemplateBasedContract(formData);
   if (!generatedCode || typeof generatedCode !== 'string') {
     throw new Error('Invalid contract generation response');
   }

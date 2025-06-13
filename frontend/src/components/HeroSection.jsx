@@ -53,10 +53,10 @@ contract AIGenerated {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-              Smart Contract <span className="text-yellow-500">Automation</span> Powered by AI
+              Smart Contract <span className="text-yellow-500">Automation</span> Platform
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl">
-              HALF-CHAIN combines blockchain technology with AI to create secure, 
+              HALF-CHAIN combines blockchain technology with secure templates to create 
               transparent, and compliant smart contracts for businesses and individuals.
             </p>
             

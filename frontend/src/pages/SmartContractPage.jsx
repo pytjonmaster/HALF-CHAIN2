@@ -19,7 +19,7 @@ const SmartContractPage = () => {
               Create Your <span className="text-yellow-500">Smart Contract</span>
             </h1>
             <p className="text-xl text-gray-300">
-              Use our AI-powered platform to create, customize, and deploy secure smart contracts in minutes.
+              Use our template-based platform to create, customize, and deploy secure smart contracts in minutes.
             </p>
           </motion.div>
           

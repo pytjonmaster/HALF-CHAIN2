@@ -76,41 +76,17 @@ export const useSmartContractForm = () => {
     setContractGenerated(false);
     
     try {
-      let generatedCode = '';
-      let usedAI = false;
-      
-      try {
-        console.log('Attempting AI generation with:', formData);
-        generatedCode = await generateContractCode(formData);
-        usedAI = true;
-        console.log('AI generation successful');
-      } catch (error) {
-        console.warn('AI generation failed, falling back to template:', error);
-        toast({
-          variant: "warning",
-          title: "Using Template",
-          description: "AI service unavailable. Using template-based generation.",
-        });
-        generatedCode = generateTemplateBasedContract(formData);
-        usedAI = false;
-      }
+      console.log('Generating contract with:', formData);
+      const generatedCode = await generateContractCode(formData);
 
       setFormData(prev => ({ ...prev, generatedCode: generatedCode || '' }));
       setContractGenerated(true);
       setActiveTab('review');
       
-      // Show appropriate success message
-      if (usedAI) {
-        toast({
-          title: "AI Contract Generated",
-          description: "Your smart contract was generated using AI.",
-        });
-      } else {
-        toast({
-          title: "Template Contract Generated", 
-          description: "Your smart contract was generated using templates.",
-        });
-      }
+      toast({
+        title: "Contract Generated", 
+        description: "Your smart contract was generated successfully using templates.",
+      });
     } catch (error) {
       console.error('Contract generation failed:', error);
       toast({

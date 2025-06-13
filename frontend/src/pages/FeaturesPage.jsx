@@ -48,9 +48,9 @@ const FeaturesPage = () => {
               >
                 <div className="space-y-6">
                   <div className="bg-[#1a2234] rounded-lg p-6 shadow-md">
-                    <h3 className="text-xl font-bold mb-3 text-white">AI-Powered Contract Generation</h3>
+                    <h3 className="text-xl font-bold mb-3 text-white">Template-Based Contract Generation</h3>
                     <p className="text-gray-300">
-                      Our advanced AI algorithms analyze your requirements and generate secure, compliant smart contracts tailored to your specific needs.
+                      Our secure template system analyzes your requirements and generates compliant smart contracts tailored to your specific needs.
                     </p>
                   </div>
                   
@@ -78,7 +78,7 @@ const FeaturesPage = () => {
                 className="relative"
               >
                                 <div className="relative">
-                                      <img  alt="AI-powered smart contract technology" className="w-full h-auto" src="/images/AI.png" />
+                                      <img  alt="Template-based smart contract technology" className="w-full h-auto" src="/images/blockchain-tech.png" />
                 </div>
                 
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-600 rounded-full blur-3xl opacity-20"></div>

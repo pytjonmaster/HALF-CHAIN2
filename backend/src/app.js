@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import { setupSecurityMiddleware } from './config/security.js';
 import authRoutes from './routes/auth.js';
 import path from 'path';
+import cors from "cors"
 
 // Initialize environment variables
 dotenv.config();
@@ -12,7 +13,7 @@ const app = express();
 const __dirname = path.resolve()
 // Body parser
 app.use(express.json());
-
+app.use(cors())
 // Setup security middleware
 setupSecurityMiddleware(app);
 
@@ -35,4 +36,4 @@ if (process.env.NODE_ENV === 'production') {
 const PORT = process.env.PORT || 9876;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-}); 
+})

@@ -1,0 +1,26 @@
+{
+  "name": "half-chain2",
+  "version": "1.0.0",
+  "description": "A full-stack blockchain application with authentication and smart contract deployment capabilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node backend/src/app.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pytjonmaster/HALF-CHAIN2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pytjonmaster/HALF-CHAIN2/issues"
+  },
+  "homepage": "https://github.com/pytjonmaster/HALF-CHAIN2#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

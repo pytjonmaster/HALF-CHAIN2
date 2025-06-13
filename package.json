@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": " NODE_ENV=production node backend/src/app.js",
-   "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+   "build": "npm install && npm install --prefix frontend && npm i vite --prefix frontend && npm run build --prefix frontend"
 
   },
   "repository": {
